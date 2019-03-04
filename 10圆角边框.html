@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>圆角边框</title>
+
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+
+        div:first-of-type {
+            background-color: deeppink;
+            border-radius: 50px;
+        }
+
+        div:nth-of-type(2) {
+            width: 200px;
+            background-color: green;
+            border-radius: 50px;
+        }
+        
+        div:nth-of-type(3) {
+            width: 200px;
+            background-color: green;
+            border: 30px solid rgb(124, 18, 18);
+            border-radius: 90px;
+        }
+
+        div:nth-of-type(4) {
+            background-color: yellow;
+            border-radius: 16px 50px;
+        }
+
+        div:nth-of-type(5) {
+            background-color: rgb(64, 174, 211);
+            border-radius: 5px 50px 50px;
+        }
+        div:nth-of-type(6) {
+            background-color: blue;
+            border-radius: 5px 10px 20px 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

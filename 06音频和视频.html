@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音频和视频</title>
+</head>
+
+<body>
+    <!-- 播放音频文件 -->
+    <!-- <embed width="300px" height="50px" src="./music/loveyou.mp3" /> -->
+
+    <!-- 播放优酷视频 -->
+    <!-- <embed src='./music/mov_bbb.mp4' allowFullScreen='true' quality='high' width='480' height='400' align='middle' allowScriptAccess='always'
+        type='application/x-shockwave-flash'></embed> -->
+
+
+    <audio controls>
+        <source src="./music/loveyou.mp3" type="audio/mpeg">
+        <source src="./music/loveyou.ogg" type="audio/ogg">
+        <source src="./music/loveyou.wav" type="audio/wav"> 您的浏览器不支持 HTML5 audio 标签。
+    </audio>
+
+    <video width="420" controls>
+        <source src="./music/mov_bbb.mp4" type="video/mp4">
+        <source src="./music/mov_bbb.ogg" type="video/ogg">
+        <source src="./music/mov_bbb.webm" type="video/webm"> 您的浏览器不支持 HTML5 video 标签。
+    </video>
+
+    <embed src='http://player.youku.com/player.php/sid/XNDAxNjY3NTM1Ng==/v.swf' allowFullScreen='true' quality='high' width='480'
+        height='400' align='middle' allowScriptAccess='always' type='application/x-shockwave-flash'></embed>
+</body>
+
+</html>

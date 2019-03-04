@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>外边距</title>
+
+    <style>
+        div {
+            width: 500px;
+            height: 300px;
+            background-color: deeppink;
+            /* 文字水平居中 */
+            text-align: center;
+
+            /* 单行文本垂直居中 */
+            line-height: 300px;
+
+            /* 通过自适应auto设置盒子的水平居中：必须是块级元素，需要给盒子指定宽度 */
+            margin: 0 auto;
+        }
+
+        /* 行内元素和行内块元素不能设置盒子居中 */
+        span {
+            width: 100%;
+            background-color: lightblue;
+            display: block;
+            margin: 0 auto;
+        }
+
+        a {
+            background-color: lightgreen;
+            /* display: inline-block; */
+            /* 行内元素可以设置水平方向的margin和padding，但是垂直方向会有bug */
+            padding: 50px;
+            margin: 100px;
+        }
+
+        p {
+            width: 500px;
+            height: 200px;
+            background-color: lightblue;
+            /* 多行文本垂直居中时，可以使用padding来设置 */
+            padding-top: 100px;
+        }
+    </style>
+
+</head>
+<body>
+    <div>我是文本</div>
+
+    <p>新浪网为全球用户24小时提供全面及时的中文资讯，内容覆盖国内外突发新闻事件、体坛赛事、娱乐时尚、产业资讯、实用信息等，设有新闻、体育、娱乐、财经、科技 </p>
+
+    <span>这是行内元素</span>
+
+    <a href="#">百度</a>
+    <a href="#">新浪</a>
+    <a href="#">腾讯</a>
+
+    
+</body>
+</html>

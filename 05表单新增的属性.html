@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单新增的属性</title>
+</head>
+
+<body>
+
+    <form action="#">
+        <input type="text" value="小明" placeholder="请输入名字..."><br><br> 
+
+        自动获取焦点：<input type="text" autofocus><br><br> 
+        
+        选择多个文件：<input type="file" multiple><br><br> 
+        
+        必填项：<input type="text" required><br><br>
+
+        设置快捷键，快速获取焦点，Alt+快捷键：<input type="text" accesskey="1"><br><br>
+
+        <select multiple>
+            <option>北京</option>
+            <option>上海</option>
+            <option>深圳</option>
+            <option>广州</option>
+        </select><br><br>
+
+        <input type="submit">
+    </form><br><br>
+    <br><br>
+    <br><br>
+
+
+    <form action="#" name="myform">
+        <fieldset>
+            <legend>自动完成功能</legend>
+            <!-- autocomplete需要打开这个功能on，要有提交到服务器的操作，表单form有name -->
+            <input type="text" autocomplete="on"><br><br>
+
+            <input type="submit">
+        </fieldset>
+    </form><br><br>
+
+
+
+
+
+</body>
+
+</html>

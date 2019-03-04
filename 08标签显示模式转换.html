@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>标签显示模式的转换</title>
+
+    <style>
+        div {
+            background-color: pink;
+            /* 将块元素转为行内元素：不能设置宽高 */
+            display: inline;
+        }
+
+        span {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            /* 将行内元素转为块级元素：可以设置宽高 */
+            display: block;
+        }
+
+        section {
+            width: 100px;
+            height: 50px;
+            background-color: hotpink;
+            /* 将块级元素转为行内块元素：在一行内显示、可以设置宽高 */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>我是div</div>
+    <div>我是div</div>
+    <div>我是div</div>
+    <br><br>
+
+    <span>我是文本</span>
+    <span>我是文本</span>
+    <span>我是文本</span>
+
+    <section>我是区块</section>
+    <section>我是区块</section>
+    <section>我是区块</section>
+
+</body>
+</html>

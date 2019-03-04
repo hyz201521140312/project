@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>内边距</title>
+
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            /* 盒子实际大小为：200+20   220*220 */
+            /* padding: 10px; */
+
+            /* 盒子的实际大小：width=200+40 height=200+20 */
+            /* padding: 10px 20px; */
+
+            /* 盒子的实际大小：width=200+40 height=200+40 */
+            /* padding: 10px 20px 30px; */
+
+            /* 盒子的实际大小：width=200+20+40 height=200+10+30 */
+            padding: 10px 20px 30px 40px;
+        }
+
+        nav {
+            background-color: #666;
+        }
+        ul,
+        li {
+            list-style: none;
+        }
+        
+        li {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div>这是文字</div>
+
+    <nav>
+        <ul>
+            <li>设为首页</li>
+            <li>手机新浪网</li>
+            <li>移动客户端</li>
+        </ul>
+    </nav>
+</body>
+</html>
